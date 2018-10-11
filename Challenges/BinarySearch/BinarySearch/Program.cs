@@ -15,7 +15,7 @@ namespace BinarySearch
         /// <param name="inArray">An array of sorted integers.</param>
         /// <param name="search">The search value.</param>
         /// <returns></returns>
-        public static int binarySearch(int[] inArray, int search)
+        public static int BinarySearch(int[] inArray, int search)
         {
             // sets intial start and end points
             int start = 0;
