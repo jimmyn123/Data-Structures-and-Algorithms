@@ -20,7 +20,7 @@ namespace BinarySearchTest
         [InlineData(new [] {2, 4}, 1, -1)]
         public void BinarySearchTest(int[] input, int value, int expected)
         {
-            Assert.True(BinarySearch(input, value) == expected);
+            Assert.True(BinarySearchInt(input, value) == expected);
         }
     }
 }
