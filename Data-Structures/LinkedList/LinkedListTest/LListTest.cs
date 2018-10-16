@@ -6,6 +6,10 @@ namespace LinkedListTest
 {
     public class LListTest
     {
+        /// <summary>
+        /// Tests the add at head
+        /// </summary>
+        /// <param name="value">value to be added</param>
         [Theory]
         [InlineData(9)]
         [InlineData(76)]
@@ -17,6 +21,10 @@ namespace LinkedListTest
             Assert.True((int)list.Head.Value == value);
         }
 
+        /// <summary>
+        /// Tests the print, returns true if the values have all printed out
+        /// </summary>
+        /// <param name="value">the node to be added</param>
         [Theory]
         [InlineData(9)]
         [InlineData(76)]
