@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Day06_LinkedList.Classes
 {
-	class LList
+	public class LList
 	{
 		/// <summary>
 		///		Always points to the first node in the LL
@@ -34,7 +34,6 @@ namespace Day06_LinkedList.Classes
 		/// <param name="node">the node that will be added</param>
 		public void Add(Node node)
 		{
-			Current = Head;
 			node.Next = Head;
 			Head = node;
 			Current = Head;
@@ -45,7 +44,7 @@ namespace Day06_LinkedList.Classes
 		///	time: O(n)
 		///	space: O(1)
 		/// </summary>
-		public void Print()
+		public bool Print()
 		{
 			Current = Head;
 
@@ -57,6 +56,7 @@ namespace Day06_LinkedList.Classes
 
 			Console.Write($"{Current.Value} --> NULL\n");
 			Current = Head;
+            return true;
 		}
 
 
@@ -105,5 +105,31 @@ namespace Day06_LinkedList.Classes
 				Current = Current.Next;
 			}
 		}
+
+        /// <summary>
+        /// inserts a node into the list after a given node
+        /// time: O(n)
+        /// space: O(1)
+        /// </summary>
+        /// <param name="newNode">the node to be added</param>
+        /// <param name="existingNode">the node before the newly added node</param>
+        public void AddAfter(Node newNode, Node existingNode)
+        {
+            Current = Head;
+            while(Current.Next != null)
+            {
+                if(Current.Value == existingNode.Value)
+                {
+                    newNode.Next = Current.Next;
+                    Current.Next = newNode;
+                }
+                Current = Current.Next;
+            }
+
+            if(Current.Value == existingNode.Value)
+            {
+                Current.Next = newNode;
+            }
+        }
 	}
 }
