@@ -10,6 +10,7 @@ namespace ll_Kth_From_End_Test
         LList list;
         public Kth_From_End_Test()
         {
+            // creates a new array list
             list = new LList(new Node(1));
             list.Add(new Node(2));
             list.Add(new Node(3));
