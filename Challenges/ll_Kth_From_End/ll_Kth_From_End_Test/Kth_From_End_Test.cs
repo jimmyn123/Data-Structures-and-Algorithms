@@ -22,9 +22,13 @@ namespace ll_Kth_From_End_Test
             list.Add(new Node(10));
         }
         [Theory]
-        public void TestKthFromEnd()
-        {
+        [InlineData(1, 0)]
+        [InlineData(6, 5)]
+        [InlineData(10, 9)]
 
+        public void TestKthFromEnd(int expected, int position)
+        {
+            Assert.True((int)Kth_From_End(list, position).Value == expected);
         }
     }
 }
