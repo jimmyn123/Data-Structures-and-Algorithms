@@ -8,16 +8,24 @@ namespace ll_merge
     {
         static void Main(string[] args)
         {
-            LList one = new LList(new Node(1));
-            one.Add(new Node(3));
-            LList two = new LList(new Node(2));
-            two.Add(new Node(4));
+            LList one = new LList(new Node(3));
+            one.Add(new Node(1));
+            LList two = new LList(new Node(6));
             two.Add(new Node(5));
-            two.Add(new Node(6));
+            two.Add(new Node(4));
+            two.Add(new Node(2));
 
-            WriteLine("List one has the following values: ");e
+            WriteLine("List one has the following values: ");
             DisplayList(one);
+
+            WriteLine("List two has the following values: ");
+            DisplayList(two);
             
+            LList merged = merge(one, two);
+            WriteLine("After merging, list should be 1, 2, 3, 4, 5, 6");
+
+            WriteLine("Actual");
+            DisplayList(merged);
         }
 
         public static LList merge(LList one, LList two)
@@ -51,9 +59,9 @@ namespace ll_merge
         {
             Node current = toDisplay.Head;
 
-            while(current != null)
+            while(current.Next != null)
             {
-                WriteLine(current.Value + ", ");
+                Write(current.Value + ", ");
                 current = current.Next;
             }
             WriteLine(current.Value);
