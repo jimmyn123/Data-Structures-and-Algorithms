@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace ll_merge
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -73,7 +73,6 @@ namespace ll_merge
                 second.Next = first;
             }
             // reset two so you can't change the list using the old references
-            one.Head = null;
             two.Head = null;
             return one;
         }
