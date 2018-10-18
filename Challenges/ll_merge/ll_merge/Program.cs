@@ -16,7 +16,7 @@ namespace ll_merge
             two.Add(new Node(6));
 
             WriteLine("List one has the following values: ");e
-            DisplayList();
+            DisplayList(one);
             
         }
 
@@ -47,12 +47,16 @@ namespace ll_merge
             return one;
         }
 
-        private void DisplayList(LList toDisplay)
+        private static void DisplayList(LList toDisplay)
         {
-            while(toDisplay != null)
-            {
+            Node current = toDisplay.Head;
 
+            while(current != null)
+            {
+                WriteLine(current.Value + ", ");
+                current = current.Next;
             }
+            WriteLine(current.Value);
         }
     }
 }
