@@ -41,5 +41,24 @@ namespace StackAndQueueTest
             q.Enqueue(new Node(50));
             Assert.True((int)q.Rear.Value == 50);
         }
+
+        // Tests the Dequeue for a Queue
+        [Fact]
+        public void DequeueNodeOnQueueTest()
+        {
+            Queue q = new Queue(new Node(7));
+            q.Enqueue(new Node(50));
+            q.Dequeue();
+            Assert.True((int)q.Front.Value == 50);
+        }
+
+        // Tests the Peek for a Queue
+        [Fact]
+        public void PeekNodeOnQueueTest()
+        {
+            Queue q = new Queue(new Node(7));
+            q.Enqueue(new Node(50));
+            Assert.True((int)q.Peek().Value == 7);
+        }
     }
 }
