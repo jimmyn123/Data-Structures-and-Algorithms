@@ -31,6 +31,7 @@ namespace Stack_and_Queue
                 Console.WriteLine(removedNode.Value);
             }
 
+            // creates a new stack and pushes the nodes in
             Stack myStack = new Stack(myNode1);
             myStack.Push(myNode2);
             myStack.Push(myNode3);
@@ -39,6 +40,7 @@ namespace Stack_and_Queue
             Console.WriteLine("==================");
             Console.WriteLine("Stack:");
 
+            // peeks at all of the elements and then pops them
             Console.WriteLine($"First peek: {myStack.Peek().Value}");
             myStack.Pop();
             Console.WriteLine($"Second peek: {myStack.Peek().Value}");
