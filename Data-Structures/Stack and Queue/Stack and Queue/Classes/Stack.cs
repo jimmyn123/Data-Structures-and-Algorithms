@@ -7,6 +7,7 @@ namespace Stack_and_Queue.Classes
     public class Stack
     {
         public Node Top { get; set; }
+        public int size { get; set; } = 0;
 
         /// <summary>
         /// Stack constructor
@@ -33,6 +34,10 @@ namespace Stack_and_Queue.Classes
         /// <returns>Returns the top none and removes from stack</returns>
         public Node Pop()
         {
+            if(size < 0)
+            {
+                size--;
+            }
             Node temp = Peek();
             Top = Top.Next;
             temp.Next = null;
@@ -47,6 +52,7 @@ namespace Stack_and_Queue.Classes
         {
             node.Next = Top;
             Top = node;
+            size++;
         }
     }
 }
