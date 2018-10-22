@@ -16,10 +16,4 @@
     <ProjectReference Include="..\Stack and Queue\Stack and Queue.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Stack and Queue">
-      <HintPath>..\Stack and Queue\bin\Debug\netcoreapp2.1\Stack and Queue.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>
