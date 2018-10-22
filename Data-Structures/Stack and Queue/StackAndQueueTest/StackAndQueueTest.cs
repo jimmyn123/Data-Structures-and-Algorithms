@@ -12,7 +12,7 @@ namespace StackAndQueueTest
         {
             Stack st = new Stack(new Node(7));
             st.Push(new Node(50));
-            Assert.True((int)st.Peek().Value == 50);
+            Assert.True((int)st.Top.Value == 50);
         }
         // Tests the Pop for a stack
         [Fact]
@@ -22,6 +22,24 @@ namespace StackAndQueueTest
             st.Push(new Node(50));
             st.Pop();
             Assert.True((int)st.Peek().Value == 7);
+        }
+
+        // Tests the Peek for a stack
+        [Fact]
+        public void PeekNodeOnStackTest()
+        {
+            Stack st = new Stack(new Node(7));
+            st.Push(new Node(50));
+            Assert.True((int)st.Peek().Value == 50);
+        }
+
+        // Tests the Enqueue for a Queue
+        [Fact]
+        public void EnqueueNodeOnQueueTest()
+        {
+            Queue q = new Queue(new Node(7));
+            q.Enqueue(new Node(50));
+            Assert.True((int)q.Rear.Value == 50);
         }
     }
 }
