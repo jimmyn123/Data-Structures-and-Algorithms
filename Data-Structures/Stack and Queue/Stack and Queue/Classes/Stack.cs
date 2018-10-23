@@ -7,6 +7,7 @@ namespace Stack_and_Queue.Classes
     public class Stack
     {
         public Node Top { get; set; }
+        public int Size { get; set; } = 0;
 
         /// <summary>
         /// Stack constructor
@@ -15,6 +16,14 @@ namespace Stack_and_Queue.Classes
         public Stack(Node node)
         {
             Top = node;
+            Size++;
+        }
+
+        /// <summary>
+        /// Default constructor, used for creating an empty stack
+        /// </summary>
+        public Stack(){
+            Top = null;
         }
 
         /// <summary>
@@ -33,6 +42,10 @@ namespace Stack_and_Queue.Classes
         /// <returns>Returns the top none and removes from stack</returns>
         public Node Pop()
         {
+            if(Size < 0)
+            {
+                Size--;
+            }
             Node temp = Peek();
             Top = Top.Next;
             temp.Next = null;
@@ -47,6 +60,7 @@ namespace Stack_and_Queue.Classes
         {
             node.Next = Top;
             Top = node;
+            Size++;
         }
     }
 }
