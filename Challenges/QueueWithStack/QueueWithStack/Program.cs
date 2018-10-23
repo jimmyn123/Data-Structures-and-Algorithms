@@ -1,4 +1,6 @@
 ﻿using System;
+using static System.Console;
+using Stack_and_Queue.Classes;
 
 namespace QueueWithStack
 {
@@ -6,7 +8,9 @@ namespace QueueWithStack
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("Adding 1,2,3 in that order");
+            Queue q = new Queue();
+
         }
     }
 }
