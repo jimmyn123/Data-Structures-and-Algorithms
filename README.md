@@ -11,4 +11,4 @@ File for grading data structures and algorithms assignments
 
 ### Data Structures
 1. [DS 1: Linked List](Data-Structures/LinkedList)
-2. [DS 2: Stack and Queues](Data-Structures/Stack-and-Queue')
+2. [DS 2: Stack and Queues](Data-Structures/Stack-and-Queue)
