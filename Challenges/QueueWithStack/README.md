@@ -1,13 +1,19 @@
-# Linked List Kth From the end
-A method that returns the a zippered link list of two link lists
+# Queue With Stacks
+A queue built using only stacks
 ## Challenge
-Write a function called mergeLists which takes two linked lists as arguments. Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list. Try and keep additional space down to O(1). You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+Emulate a queue's enqueue and dequeue using only stack operations.
 
 ## Approach & Efficiency
-Big O time: O(N)
-Since we will iterate through the both linked lists until one is null, the time is O(n) because it scales with the number of items in the list
-Big O space: O(1)
-We will just search the linked list so we don't create any new items that will take up space
+
+Big O Enqueue time: O(1)
+Since you are only enqueueing to the rear, the time is O(1).
+Big O Enqueue space: O(1)
+We are only adding one element that is given to us in as in input so the space is also O(1).
+
+Big O Dequeue time: O(N)
+We will have to iterate through each element in the rear to flip it into the front. That means time is O(n).
+Big O Dequeue space: O(1)
+The space does not grow for dequeue, we just take one out so the space is O(1)
 
 ## Solution
-![LL merge whiteboard picture](../../assets/ll_merge.jpg).
+![LL merge whiteboard picture](../../assets/queuewithstacks.jpg).
