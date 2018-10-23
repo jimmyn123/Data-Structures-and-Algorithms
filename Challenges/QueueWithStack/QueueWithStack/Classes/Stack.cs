@@ -39,19 +39,16 @@
         /// <returns>Returns the top none and removes from stack</returns>
         public Node Pop()
         {
+            Node temp = Peek();
             if (Size > 0)
             {
-                Size--;
-            }
-            Node temp = Peek();
-            if (Size != 0)
-            {
                 Top = Top.Next;
-                temp.Next = ;
+                temp.Next = null;
+                Size--;
             }
             return temp;
         }
-null
+
         /// <summary>
         /// Adds a new node at the top
         /// </summary>

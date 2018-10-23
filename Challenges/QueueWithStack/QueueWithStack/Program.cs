@@ -23,9 +23,6 @@ namespace QueueWithStack
 
             WriteLine("Dequeueing last node added...");
             WriteLine("Node dequeued: " + (int)q.Dequeue().Value);
-
-            WriteLine("Dequeueing last node added...");
-            WriteLine("Node dequeued: " + (int)q.Dequeue().Value);
         }
     }
 }
