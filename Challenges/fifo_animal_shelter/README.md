@@ -18,4 +18,4 @@ Big O Dequeue space: O(1)
 The space does not grow for dequeue, we just take one out so the space is O(1)
 
 ## Solution
-![LL merge whiteboard picture](../../assets/queuewithstacks.jpg).
+![LL merge whiteboard picture](../../assets/animal_shelter.jpg).
