@@ -1,5 +1,6 @@
 ﻿using System;
 using fifo_animal_shelter.Class;
+using static System.Console;
 
 namespace fifo_animal_shelter
 {
@@ -9,8 +10,19 @@ namespace fifo_animal_shelter
         {
             Console.WriteLine("Hello World!");
 
-            Cat an = new Cat();
-        }
+            AnimalShelter shelter = new AnimalShelter();
+            shelter.Print();
+            shelter.Enqueue(new Node(new Dog()));
+            shelter.Enqueue(new Node(new Dog()));
+            shelter.Enqueue(new Node(new Cat()));
+            shelter.Enqueue(new Node(new Dog()));
+            shelter.Enqueue(new Node(new Cat()));
 
+            shelter.Print();
+
+            WriteLine("Dequeueing...");
+            shelter.Dequeue("Cat");
+            shelter.Print();
+        }
     }
 }
