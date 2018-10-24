@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "fifo_animal_shelter", "fifo_animal_shelter\fifo_animal_shelter.csproj", "{00E70B4D-A62C-43C3-89C9-D23C36D97D7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "animal_shelter_test", "animal_shelter_test\animal_shelter_test.csproj", "{EDEC4F48-6B66-4D9C-9385-AF01285BDC4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00E70B4D-A62C-43C3-89C9-D23C36D97D7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E70B4D-A62C-43C3-89C9-D23C36D97D7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E70B4D-A62C-43C3-89C9-D23C36D97D7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E70B4D-A62C-43C3-89C9-D23C36D97D7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDEC4F48-6B66-4D9C-9385-AF01285BDC4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDEC4F48-6B66-4D9C-9385-AF01285BDC4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDEC4F48-6B66-4D9C-9385-AF01285BDC4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDEC4F48-6B66-4D9C-9385-AF01285BDC4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3417E342-70B8-46A8-B957-B1D72F76D907}
+	EndGlobalSection
+EndGlobal
