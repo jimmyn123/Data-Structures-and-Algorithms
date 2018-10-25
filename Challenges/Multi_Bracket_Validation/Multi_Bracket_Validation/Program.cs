@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace Multi_Bracket_Validation
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {

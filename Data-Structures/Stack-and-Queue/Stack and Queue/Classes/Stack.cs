@@ -42,7 +42,7 @@ namespace Stack_and_Queue.Classes
         /// <returns>Returns the top none and removes from stack</returns>
         public Node Pop()
         {
-            if(Size < 0)
+            if(Size > 0)
             {
                 Size--;
             }
