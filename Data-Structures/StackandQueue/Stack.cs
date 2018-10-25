@@ -7,10 +7,18 @@ namespace Stack_and_Queue.Classes
     public class Stack
     {
         public Node Top { get; set; }
+        public int Size { get; set; } = 0;
 
         public Stack(Node node)
         {
             Top = node;
+            Size++;
+        }
+
+        // default constructor
+        public Stack()
+        {
+            
         }
 
         //Peek
@@ -24,8 +32,13 @@ namespace Stack_and_Queue.Classes
         public Node Pop()
         {
             Node temp = Peek();
-            Top = Top.Next;
-            temp.Next = null;
+
+            if (temp != null)
+            {
+                Top = Top.Next;
+                temp.Next = null;
+                Size--;
+            }
             return temp;
         }
         //Push
@@ -33,6 +46,7 @@ namespace Stack_and_Queue.Classes
         {
             node.Next = Top;
             Top = node;
+            Size++;
         }
     }
 }
