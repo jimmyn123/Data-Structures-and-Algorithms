@@ -32,9 +32,13 @@ namespace Stack_and_Queue.Classes
         public Node Pop()
         {
             Node temp = Peek();
-            Top = Top.Next;
-            temp.Next = null;
-            Size--;
+
+            if (temp != null)
+            {
+                Top = Top.Next;
+                temp.Next = null;
+                Size--;
+            }
             return temp;
         }
         //Push
