@@ -1,4 +1,6 @@
 ﻿using System;
+using Stack_and_Queue.Classes;
+using static System.Console;
 
 namespace Multi_Bracket_Validation
 {
@@ -6,7 +8,12 @@ namespace Multi_Bracket_Validation
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            WriteLine("Hello World!");
+            MultiBracketValidation();
+        }
+        public static bool MultiBracketValidation()
+        {
+            return true;
         }
     }
 }
