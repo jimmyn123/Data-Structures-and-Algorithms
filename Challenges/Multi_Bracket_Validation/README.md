@@ -12,4 +12,4 @@ Big O space: O(n)
 We are creating a stack to push in the braces. This depends on the amount of braces so this becomes O(n)
 
 ## Solution
-![Mult-bracket validation whiteboard picture](../../assets/animal_shelter.jpg).
+![Mult-bracket validation whiteboard picture](../../assets/bracket_validation.jpg).
