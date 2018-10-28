@@ -45,17 +45,33 @@ namespace MaxStack.Classes
         /// <returns>Returns the top none and removes from stack</returns>
         public Node Pop()
         {
+            Node temp = Peek();
+            // handles null top (empty stack)
             if (Size > 0)
             {
+                Top = Top.Next;
+                temp.Next = null;
                 Size--;
+
+                Node curr = Top;
+                Stack checkedStacked = new Stack();
+                int newMax = int.MinValue;
+
+                // finds the new max value
+                while (curr != null)
+                {
+                    if((int)curr.Value > newMax)
+                    {
+                        newMax = (int)curr.Value;
+                    }
+                    curr = curr.Next;
+                }
             }
             else
             {
+                // empty list so the max is the lowest
                 Max = int.MinValue;
             }
-            Node temp = Peek();
-            Top = Top.Next;
-            temp.Next = null;
             return temp;
         }
 
