@@ -161,6 +161,12 @@ namespace TreesTest
             Assert.True(testResult);
         }
 
+        /// <summary>
+        /// Tests the search by adding a bunch of nodes then returing true if it returns a node
+        /// </summary>
+        /// <param name="input">the array to build the nodes from</param>
+        /// <param name="search">the value to search for</param>
+        /// <param name="expected">The expected result if the search works</param>
         [Theory]
         [InlineData(new int[] { 1,2,3}, 3, true)]
         [InlineData(new int[] { 1,2,3}, 5, false)]
