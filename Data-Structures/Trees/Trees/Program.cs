@@ -33,7 +33,20 @@ namespace Trees
             WriteLine("======== Post-order ========");
             bt.PostOrder();
 
-            BinarySearchTree bst = new BinarySearchTree()
+            WriteLine("Adding bst with values 3, 1, 2 in that order.");
+            // Creates a new bst
+            BinarySearchTree bst = new BinarySearchTree(new Node(3));
+            bst.Add(new Node(1));
+            bst.Add(new Node(2));
+
+            WriteLine("Searching bst for 5, should not be found");
+            Node result = bst.Search(5);
+            if(result == null)
+            {
+                WriteLine("5 was not found");
+            }
+
+            WriteLine("done");
         }
     }
 }
