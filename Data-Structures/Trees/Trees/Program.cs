@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Trees.Classes;
 using static System.Console;
 
@@ -47,6 +48,30 @@ namespace Trees
             }
 
             WriteLine("done");
+
+            root = new Node(1);
+            leftChild = new Node(2);
+            rightChild = new Node(3);
+
+            root.Left = leftChild;
+            root.Right = rightChild;
+
+            bt = new BinaryTree(root);
+
+            bool resultEnd = true;
+
+            List<Node> listBack = bt.PostOrder();
+            int[] expected = { 2, 3, 1 };
+            for (int i = 0; i < expected.Length; i++)
+            {
+                WriteLine((int)(listBack[i].Value));
+                if (expected[i] != (int)listBack[i].Value)
+                {
+                    resultEnd = false;
+                }
+            }
+
+            WriteLine(resultEnd);
         }
     }
 }

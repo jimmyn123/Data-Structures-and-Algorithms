@@ -3,13 +3,13 @@ This is an implementation of Binary Tree and BST. Each tree has two nodes, a lef
 
 ## Space/Time Complexity
 ### Binary Tree PreOrder, InOrder, PostOrder
-Time: O(N)
+Time: O(n)
 
 Since you have to iterate through every node, the time is O(n).
 
-Space: O(1)
+Space: O(n)
 
-You do not have to create new nodes, so the space is O(1).
+You do not have to create new nodes, but you do have to create a list with N elements, so the space is O(n).
 
 ### BST Add
 Time: O(log n)
