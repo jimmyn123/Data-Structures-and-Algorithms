@@ -36,7 +36,7 @@ namespace Trees.Classes
         public void PreOrderRecursive(Node root)
         {
             Console.WriteLine((int)root.Value);
-            returnList.Add(Root);
+            returnList.Add(root);
 
             if (root.Left != null)
             {
@@ -99,12 +99,12 @@ namespace Trees.Classes
         {
             if (root.Left != null)
             {
-                PreOrderRecursive(root.Left);
+                PostOrderRecursive(root.Left);
             }
 
             if (root.Right != null)
             {
-                PreOrderRecursive(root.Right);
+                PostOrderRecursive(root.Right);
             }
 
             Console.WriteLine((int)root.Value);

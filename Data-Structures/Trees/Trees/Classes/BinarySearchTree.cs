@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Trees.Classes
 {
-    class BinarySearchTree
+    public class BinarySearchTree
     {
         public Node Root { get; set; }
 
