@@ -56,16 +56,24 @@ namespace Trees.Classes
             }
         }
 
+        /// <summary>
+        /// Searches the tree with a value to see if a node exists
+        /// </summary>
+        /// <param name="value">The node with the value in it or null</param>
+        /// <returns></returns>
         public Node Search(int value)
         {
             Node curr = Root;
 
             while(curr != null)
             {
+                // returns the node if it exists
                 if(value == (int)curr.Value)
                 {
                     return curr;
                 }
+                
+                // if not, then traverse the tree
                 if(value < (int)curr.Value)
                 {
                     curr = curr.Left;
@@ -76,6 +84,7 @@ namespace Trees.Classes
                 }
             }
 
+            // returns null if it is non-existent
             return null;
         }
     }
