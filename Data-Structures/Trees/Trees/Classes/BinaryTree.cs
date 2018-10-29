@@ -9,11 +9,19 @@ namespace Trees.Classes
         public Node Root { get; set; }
         public List<Node> returnList;
         
+        /// <summary>
+        /// Creates a binary tree with a root node
+        /// </summary>
+        /// <param name="root">the root node</param>
         public BinaryTree(Node root)
         {
             Root = root;
         }
 
+        /// <summary>
+        /// Returns a list of in order elements
+        /// </summary>
+        /// <returns>List that of pre-ordered elements</returns>
         public List<Node> PreOrder()
         {
             returnList = new List<Node>();
@@ -21,6 +29,10 @@ namespace Trees.Classes
             return returnList;
         }
 
+        /// <summary>
+        /// The actual recursive method
+        /// </summary>
+        /// <param name="root">the current node</param>
         public void PreOrderRecursive(Node root)
         {
             Console.WriteLine((int)root.Value);
@@ -37,6 +49,10 @@ namespace Trees.Classes
             }
         }
 
+        /// <summary>
+        /// Returns an in order representation of the elements in a list
+        /// </summary>
+        /// <returns>The list that contains all of the nodes in order</returns>
         public List<Node> InOrder()
         {
             returnList = new List<Node>();
@@ -44,6 +60,10 @@ namespace Trees.Classes
             return returnList;
         }
 
+        /// <summary>
+        /// The actual recursive method for in order
+        /// </summary>
+        /// <param name="root">The starting node</param>
         public void InOrderRecursive(Node root)
         {
             if (root.Left != null)
@@ -60,6 +80,10 @@ namespace Trees.Classes
             }
         }
 
+        /// <summary>
+        /// Returns the post order of all of the elements in the node into a list
+        /// </summary>
+        /// <returns>The list of post order nodes</returns>
         public List<Node> PostOrder()
         {
             returnList = new List<Node>();
@@ -67,6 +91,10 @@ namespace Trees.Classes
             return returnList;
         }
 
+        /// <summary>
+        /// The actual recursive method for post order
+        /// </summary>
+        /// <param name="root">the starting node</param>
         public void PostOrderRecursive(Node root)
         {
             if (root.Left != null)
