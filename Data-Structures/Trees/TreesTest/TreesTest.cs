@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace TreesTest
 {
-    public class UnitTest1
+    public class TreesTest
     {
         [Theory]
         [InlineData(new int[] {1,2,3}, 1, 2, 3)]
