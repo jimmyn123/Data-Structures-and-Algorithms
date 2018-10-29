@@ -32,6 +32,8 @@ namespace Trees
             bt.InOrder();
             WriteLine("======== Post-order ========");
             bt.PostOrder();
+
+            BinarySearchTree bst = new BinarySearchTree()
         }
     }
 }
