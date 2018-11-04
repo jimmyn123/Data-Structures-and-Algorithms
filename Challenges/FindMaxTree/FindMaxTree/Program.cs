@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace FindMaxTree
 {
-    class Program
+    pubilc class Program
     {
         static void Main(string[] args)
         {
@@ -27,25 +27,43 @@ namespace FindMaxTree
             WriteLine("Max value: " + FindMaxValue(bt));
         }
 
+        /// <summary>
+        /// Finds the max value with a bt input
+        /// </summary>
+        /// <param name="bt">The binary tree to traverse</param>
+        /// <returns>the max value</returns>
         public static int FindMaxValue(BinaryTree bt)
         {
             return FindMaxValue(bt.Root, int.MinValue);
         }
 
-        public static int FindMaxValue(Node curr, int max)
+        /// <summary>
+        /// The actual recursive function that does the traversal
+        /// </summary>
+        /// <param name="curr">the current root to compare</param>
+        /// <param name="max">the current max value</param>
+        /// <returns>the max value</returns>
+        private static int FindMaxValue(Node curr, int max)
         {
+            // compares the values
             if((int)curr.Value > max)
             {
                 max = (int)curr.Value;
             }
+
+            // if there is something on the left compare to the left
             if(curr.Left != null)
             {
                 max = FindMaxValue(curr.Left, max);
             }
+
+            // if there is something on the right, figure out the max for the right
             if(curr.Right != null)
             {
                 max = FindMaxValue(curr.Right, max);
             }
+            
+            // always return max at base case
             return max;
         }
     }
