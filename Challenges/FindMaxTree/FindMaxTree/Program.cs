@@ -4,7 +4,7 @@ using static System.Console;
 
 namespace FindMaxTree
 {
-    pubilc class Program
+    public class Program
     {
         static void Main(string[] args)
         {
