@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMaxTree", "FindMaxTree\FindMaxTree.csproj", "{A2AEF16F-0E7A-4689-AD71-23D8FF646BBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindMaxTreeTest", "FindMaxTreeTest\FindMaxTreeTest.csproj", "{5588137B-C671-40AE-8CB3-0D4A711F44BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2AEF16F-0E7A-4689-AD71-23D8FF646BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2AEF16F-0E7A-4689-AD71-23D8FF646BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2AEF16F-0E7A-4689-AD71-23D8FF646BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2AEF16F-0E7A-4689-AD71-23D8FF646BBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5588137B-C671-40AE-8CB3-0D4A711F44BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5588137B-C671-40AE-8CB3-0D4A711F44BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5588137B-C671-40AE-8CB3-0D4A711F44BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5588137B-C671-40AE-8CB3-0D4A711F44BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00F46FBB-6664-4181-B3E6-B788E52E0E34}
+	EndGlobalSection
+EndGlobal

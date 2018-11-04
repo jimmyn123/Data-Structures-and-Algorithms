@@ -9,7 +9,8 @@ File for grading data structures and algorithms assignments
 5. [Challenge 6: Reverse Linked List](Challenges/ReverseLinkedList)
 6. [Challenge 7: Queue With Stacks](Challenges/QueueWithStack)
 7. [Challenge 8: FizzBuzz Trees](Challenges/FizzBuzzTree)
-8. [Challenge 9: Breadth-First-Traversal](Challenges/BreadthFirst)
+8. [Challenge 9: Max Value Binary Tree](Challenges/FindMaxTree)
+9. [Challenge 10: Breadth-First-Traversal](Challenges/BreadthFirst)
 
 ### Data Structures
 1. [DS 1: Linked List](Data-Structures/LinkedList)
