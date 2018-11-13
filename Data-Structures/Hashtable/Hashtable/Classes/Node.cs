@@ -6,7 +6,15 @@ namespace Hashtable.Classes
 {
     class Node
     {
-        public object Key { get; set; }
+        public string Key { get; set; }
         public object Value { get; set; }
+
+        public Node Next { get; set; }
+
+        public Node(string key, object input)
+        {
+            Key = key;
+            Value = input;
+        }
     }
 }

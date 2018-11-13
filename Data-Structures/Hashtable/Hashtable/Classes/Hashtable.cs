@@ -4,17 +4,17 @@ using System.Text;
 
 namespace Hashtable.Classes
 {
-    class Hashtable
+    class HashTable
     {
-        public LinkedList<Node>[] HashTableArray { get; set; }
+        public Node[] HashTableArray { get; set; }
 
-        public Hashtable() : this(13)
+        public HashTable() : this(13)
         {
         }
 
-        public Hashtable(int buckets)
+        public HashTable(int buckets)
         {
-            HashTableArray = new LinkedList<Node>[buckets];
+            HashTableArray = new Node[buckets];
         }
 
         public int GetHash(string key)
@@ -30,20 +30,56 @@ namespace Hashtable.Classes
             return index;
         }
 
-        public void Add(string key, Node input)
+        public void Add(string key, object input)
         {
             int index = GetHash(key);
             if(HashTableArray[index] == null)
             {
-                LinkedList<Node> stored = new LinkedList<Node>();
-                stored.AddLast(input);
-                HashTableArray[index] = stored;
+                HashTableArray[index] = new Node(key, input);
             }
             else
             {
-                LinkedList<Node> stored = HashTableArray[index];
-                foreach(Node curr in )
+                Node curr = HashTableArray[index];
+                Node prev = null;
+
+                bool uniqueKey = true;
+
+                while(curr != null)
+                {
+                    if(curr.Key == key)
+                    {
+                        curr.Value = input;
+                        uniqueKey = false;
+                    }
+                    prev = curr;
+                    curr = curr.Next;
+                }
+
+                if (uniqueKey)
+                {
+                    prev.Next = new Node(key, input);
+                }
             }
+        }
+
+        public bool Contains(string key)
+        {
+            return Find(key) != null;
+        }
+
+        public Node Find(string key)
+        {
+            int index = GetHash(key);
+
+            Node curr = HashTableArray[index];
+            while (curr != null)
+            {
+                if (curr.Key == key)
+                {
+                    return curr;
+                }
+            }
+            return null;
         }
     }
 }
