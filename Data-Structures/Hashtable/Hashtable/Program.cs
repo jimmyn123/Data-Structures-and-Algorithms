@@ -16,6 +16,9 @@ namespace Hashtable
             WriteLine("Creating new node that has key: Cat and value: 15");
             WriteLine("After hash, Cat should have index: 10");
             WriteLine("Actual index: " + ht.GetHash(initial.Key));
+
+            ht.Add(initial.Key, initial);
+            WriteLine("Contains Cat key: " + ht.Contains("Cat"));
         }
     }
 }
