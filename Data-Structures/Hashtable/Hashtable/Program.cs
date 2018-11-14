@@ -13,16 +13,22 @@ namespace Hashtable
 
             // creates a node
             WriteLine("Created new hashtable....");
-            Node initial = new Node("Cat", 15);
 
             // finds the hash of the string
-            WriteLine("Creating new node that has key: Cat and value: 15");
             WriteLine("After hash, Cat should have index: 10");
-            WriteLine("Actual index: " + ht.GetHash(initial.Key));
+            WriteLine("Actual index: " + ht.GetHash("Cat"));
 
             // adds and tests contains
-            ht.Add(initial.Key, initial);
+            ht.Add("Cat", 15);
             WriteLine("Contains Cat key: " + ht.Contains("Cat"));
+
+            ht.Add("aCt", 17);
+            WriteLine("Forced a collision using key aCt");
+            
+            WriteLine("Value of Cat should be 15");
+            WriteLine("Value of finding Cat is: " + (int)ht.Find("Cat"));
+            WriteLine("Value of aCt should be 17");
+            WriteLine("Value of finding aCt is: " + (int)ht.Find("aCt"));
         }
     }
 }

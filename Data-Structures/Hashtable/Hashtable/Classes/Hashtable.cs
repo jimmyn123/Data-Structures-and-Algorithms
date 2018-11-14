@@ -111,6 +111,7 @@ namespace Hashtable.Classes
                 {
                     return curr.Value;
                 }
+                curr = curr.Next;
             }
             return null;
         }
