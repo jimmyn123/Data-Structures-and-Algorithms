@@ -25,6 +25,7 @@ namespace Hashtable
             ht.Add("aCt", 17);
             WriteLine("Forced a collision using key aCt");
             
+            // display new values even if there is a collision
             WriteLine("Value of Cat should be 15");
             WriteLine("Value of finding Cat is: " + (int)ht.Find("Cat"));
             WriteLine("Value of aCt should be 17");
