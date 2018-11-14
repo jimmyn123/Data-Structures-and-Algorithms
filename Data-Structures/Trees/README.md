@@ -18,7 +18,7 @@ The tree gets halved each time you compare values so time is O(log n).
 Space: O(1)
 
 Adds only one element so O(1), does not create a new list
-
+a
 ### BST Search
 Time: O(1)
 
