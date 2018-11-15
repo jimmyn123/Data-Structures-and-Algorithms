@@ -4,9 +4,9 @@ using Hashtable.Classes;
 using System.Collections.Generic;
 using static System.Console;
 
-namespace TreeIntersection
+namespace TreeIntersectionChallenge
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
