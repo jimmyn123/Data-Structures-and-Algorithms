@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repeated_Word", "Repeated_Word\Repeated_Word.csproj", "{FD57F9C4-7508-41FB-8A18-B86106CB864F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RepeatedWordTest", "RepeatedWordTest\RepeatedWordTest.csproj", "{AC6C4878-3601-4B57-9426-AD3C81AECA5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FD57F9C4-7508-41FB-8A18-B86106CB864F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FD57F9C4-7508-41FB-8A18-B86106CB864F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FD57F9C4-7508-41FB-8A18-B86106CB864F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC6C4878-3601-4B57-9426-AD3C81AECA5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC6C4878-3601-4B57-9426-AD3C81AECA5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC6C4878-3601-4B57-9426-AD3C81AECA5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC6C4878-3601-4B57-9426-AD3C81AECA5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
