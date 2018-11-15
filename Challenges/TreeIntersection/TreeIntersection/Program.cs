@@ -44,6 +44,12 @@ namespace TreeIntersection
 
         }
 
+        /// <summary>
+        /// Method that returns a list of the values that intersect between the two trees
+        /// </summary>
+        /// <param name="bt1">First binary tree</param>
+        /// <param name="bt2">Second binary tree</param>
+        /// <returns>List of intersects</returns>
         public static List<string> TreeIntersection(BinaryTree bt1, BinaryTree bt2)
         {
             HashTable ht = new HashTable();
