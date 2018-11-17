@@ -3,9 +3,9 @@ using Trees.Classes;
 using System.Collections.Generic;
 using static System.Console;
 
-namespace BreadthFirst
+namespace Breadth_First
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
