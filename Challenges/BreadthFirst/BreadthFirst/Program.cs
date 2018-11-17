@@ -3,9 +3,9 @@ using Trees.Classes;
 using System.Collections.Generic;
 using static System.Console;
 
-namespace BreadthFirst
+namespace Breadth_First
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -36,11 +36,13 @@ namespace BreadthFirst
         /// Does a breadth first traversal over binary tree
         /// </summary>
         /// <param name="bt">the binary tree</param>
-        public static void BreadthFirst(BinaryTree bt)
+        public static List<Node> BreadthFirst(BinaryTree bt)
         {
             // creats a new queue and adds the initial root node
             Queue<Node> q = new Queue<Node>();
             q.Enqueue(bt.Root);
+
+            List<Node> returnList = new List<Node>();
 
             // while the q is not empty
             while (q.Peek() != null)
@@ -51,7 +53,10 @@ namespace BreadthFirst
                 q.Enqueue(root.Right);
 
                 WriteLine(root.Value);
+                returnList.Add(root);
             }
+
+            return returnList;
         }
     }
 }
