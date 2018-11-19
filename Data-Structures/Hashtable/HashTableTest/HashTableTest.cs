@@ -52,13 +52,13 @@ namespace HashTableTest
         public void TestGetHash(string key)
         {
             HashTable ht = new HashTable(17);
-            int index = 0;
+            UInt64 index = 5381;
 
             for(int i = 0; i < key.Length; i++)
             {
-                index += (int)key[i];
+                index = index * 33 + (UInt64)key[i];
             }
-            Assert.True((index * 137) % 17 == ht.GetHash(key));
+            Assert.True(index % 17 == ht.GetHash(key));
         }
 
         /// <summary>

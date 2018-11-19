@@ -30,6 +30,9 @@ namespace Hashtable
             WriteLine("Value of finding Cat is: " + (int)ht.Find("Cat"));
             WriteLine("Value of aCt should be 17");
             WriteLine("Value of finding aCt is: " + (int)ht.Find("aCt"));
+
+            ht.Add("Second", 13);
+            WriteLine("Forced a collision using key aCt");
         }
     }
 }

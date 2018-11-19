@@ -29,17 +29,19 @@ namespace Hashtable.Classes
         /// </summary>
         /// <param name="key">the key to hash</param>
         /// <returns>the index</returns>
-        public int GetHash(string key)
+        public UInt64 GetHash(string key)
         {
-            int index = 0;
-            foreach(char c in key)
+            UInt64 initial = 5381;
+            UInt64 hashMultiplier = 33;
+
+            UInt64 hash = initial;
+            for(int i = 0; i < key.Length; i++)
             {
-                index += (int)c;   
+                hash = hash * hashMultiplier + (UInt64)key[i];
             }
 
-            index *= 137;
-            index %= HashTableArray.Length;
-            return index;
+            hash %= (UInt64)HashTableArray.Length;
+            return hash;
         }
 
         /// <summary>
@@ -49,7 +51,7 @@ namespace Hashtable.Classes
         /// <param name="input">the value</param>
         public void Add(string key, object input)
         {
-            int index = GetHash(key);
+            UInt64 index = GetHash(key);
 
             // if the bucket is empty, set the first node
             if(HashTableArray[index] == null)
@@ -100,7 +102,7 @@ namespace Hashtable.Classes
         /// <returns>the value</returns>
         public object Find(string key)
         {
-            int index = GetHash(key);
+            UInt64 index = GetHash(key);
 
             Node curr = HashTableArray[index];
 
