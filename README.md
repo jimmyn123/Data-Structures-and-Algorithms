@@ -13,6 +13,7 @@ File for grading data structures and algorithms assignments
 9. [Challenge 10: Breadth-First-Traversal](Challenges/BreadthFirst)
 10. [Challenge 11: Tree Intersection](Challenges/TreeIntersection)
 11. [Challenge 12: Repeated Word](Challenges/Repeated_Word)
+12. [Challenge 13: Unique Characters](Challenges/Unique_Characters)
 
 ### Data Structures
 1. [DS 1: Linked List](Data-Structures/LinkedList)
