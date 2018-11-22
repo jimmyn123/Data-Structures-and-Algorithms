@@ -2,7 +2,7 @@
 
 namespace Quick_Sort
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -27,7 +27,7 @@ namespace Quick_Sort
         /// <param name="arr">The original array</param>
         /// <param name="left">starting left position</param>
         /// <param name="right">starting right position</param>
-        static void QuickSort(int[] arr, int left, int right)
+        public static void QuickSort(int[] arr, int left, int right)
         {
             if (left < right)
             {
