@@ -7,6 +7,8 @@ namespace Direct_Flight
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Added vertices: Seattle, LA, NYC, Vancouver");
+
             Vertex v1 = new Vertex("Seattle");
             Vertex v2 = new Vertex("LA");
             Vertex v3 = new Vertex("NYC");
@@ -24,6 +26,8 @@ namespace Direct_Flight
             routeMap.AddUndirectedEdge(v1, v4, 80.0);
             routeMap.AddUndirectedEdge(v2, v3, 600.0);
 
+            Console.WriteLine("Created False Array: La, Vancouver");
+            Console.WriteLine("Created True Array: NYC, Seattle, Vancouver");
             Vertex[] arrayFalse = { v4, v2 };
             Vertex[] arrayTrue = { v3, v1, v4 };
 
@@ -31,9 +35,9 @@ namespace Direct_Flight
             (bool, double) result = DirectFlight(routeMap, arrayFalse);
             Console.WriteLine("Direct flight: " + result.Item1 + ", Price: " + result.Item2);
 
-            (bool, double) resultTwo = DirectFlight(routeMap, arrayFalse);
+            (bool, double) resultTwo = DirectFlight(routeMap, arrayTrue);
             Console.WriteLine("Testing True array, should return: True, 580.0");
-            Console.WriteLine("Direct flight: " + result.Item1 + ", Price: " + result.Item2);
+            Console.WriteLine("Direct flight: " + resultTwo.Item1 + ", Price: " + resultTwo.Item2);
 
         }
 
