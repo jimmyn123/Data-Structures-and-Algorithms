@@ -44,7 +44,7 @@ namespace Direct_Flight
         public static (bool, double) DirectFlight(Graph routeMap, Vertex[] cities)
         {
             double total = 0.0;
-            for (int i = 0; i < cities.Length - 2; i++)
+            for (int i = 0; i < cities.Length - 1; i++)
             {
                 double weight = (double)routeMap.WeightList[(cities[i], cities[i + 1])];
                 if (weight > 0)
